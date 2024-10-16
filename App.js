@@ -4,11 +4,13 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
 import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
+import LogoutScreen from './screens/LogoutScreen';
 import RoomListScreen from './screens/RoomListScreen';
 import RoomScreen from './screens/RoomScreen';
 import PrivateMessageScreen from './screens/PrivateMessageScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import PostListScreen from './screens/PostListScreen';
+
 
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
@@ -83,6 +85,11 @@ export default function App() {
           name="Messages Privés"
           component={PrivateMessageScreen}
           options={{ drawerLabel: 'Messages Privés' }}
+        />
+        <Drawer.Screen
+          name="Logout"
+          component={LogoutScreen}
+          options={{ drawerLabel: 'Déconnexion' }}
         />
       </Drawer.Navigator>
     </NavigationContainer>
