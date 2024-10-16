@@ -21,7 +21,7 @@ export default function RoomListScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Liste des Rooms</Text>
+      <Text style={styles.title}></Text>
       <FlatList
         data={rooms}
         keyExtractor={(item) => item.id}

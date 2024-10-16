@@ -34,7 +34,7 @@ function MainStackNavigator() {
       <Stack.Screen
         name="Room"
         component={RoomScreen}
-        options={{ headerLeft: null, title: 'Messages dans la Room' }}
+        options={{ headerLeft: null, title: '' }}
       />
       <Stack.Screen
         name="PrivateMessage"

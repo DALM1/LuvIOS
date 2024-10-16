@@ -77,7 +77,7 @@ export default function ProfileScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Mon Profil</Text>
+      <Text style={styles.title}></Text>
       <Image
         source={avatar ? { uri: avatar } : require('../assets/default-avatar.png')}
         style={styles.avatar}

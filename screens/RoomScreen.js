@@ -28,7 +28,7 @@ export default function RoomScreen({ route }) {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Messages dans la Room</Text>
+      <Text style={styles.title}></Text>
       <FlatList
         data={messages}
         keyExtractor={(item, index) => index.toString()}
